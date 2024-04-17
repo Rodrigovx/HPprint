@@ -12,10 +12,6 @@ Takeown /f  "%windir%\prefetch" /R /D N
 icacls "%windir%\prefetch" /E /T /G Todos:F 
 RD /S "%windir%\prefetch" /q 
 del "%windir%\prefetch" /q
-Takeown /f  %userprofile%\recent" /R /D N 
-icacls %userprofile%\recent" /E /T /G Todos:F 
-RD /S %userprofile%\recent" /q 
-del %userprofile%\recent" /q
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2
 RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 1
